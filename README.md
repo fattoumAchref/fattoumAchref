@@ -69,135 +69,6 @@ Technologies:
 ---
 
 # ⭐ Featured Projects
-
-## 🔐 TrustLens — AI Identity Verification
-
-**AI-powered identity verification platform combining Computer Vision, OCR and microservices.**
-
-TrustLens automates the extraction, validation and analysis of identity documents such as passports and national identity cards.
-
-### Key Features
-
-* 🧾 Automatic document text extraction using **PaddleOCR**
-* 🖼️ MRZ detection using **YOLO + PyTorch**
-* 🧠 AI-based validation of extracted information
-* 🔍 Detection of inconsistencies in identity information
-* 📬 Automated notifications through SMTP
-* 📊 Monitoring and analytics with **Metabase**
-* 🌐 API Gateway for service orchestration
-* 💻 Angular frontend
-* 🧩 Microservices architecture
-
-### Architecture
-
-```text
-                    ┌──────────────────┐
-                    │  Angular Client  │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │    API Gateway   │
-                    └────────┬─────────┘
-                             │
-              ┌──────────────┼──────────────┐
-              │              │              │
-              ▼              ▼              ▼
-        ┌──────────┐   ┌──────────┐   ┌──────────┐
-        │ PaddleOCR│   │  MRZ AI  │   │ Analysis │
-        │ Service  │   │  YOLO    │   │ Service  │
-        └──────────┘   └──────────┘   └──────────┘
-              │              │              │
-              └──────────────┼──────────────┘
-                             ▼
-                    ┌──────────────────┐
-                    │    Metabase      │
-                    │    Dashboard     │
-                    └──────────────────┘
-```
-
-### Technologies
-
-`Python` `PaddleOCR` `YOLO` `PyTorch` `Flask` `Node.js` `Express.js` `Angular` `Metabase` `SMTP`
-
----
-
-# 🏦 CompliMind — AI Compliance Platform
-
-**Multi-agent AI platform for automated financial compliance analysis.**
-
-Developed in the context of **Oddo BHF**, CompliMind analyzes commercial presentations, prospectuses and financial documents against regulatory compliance rules.
-
-The platform combines **RAG, vector search, LLMs and specialized AI agents** to provide explainable compliance decisions.
-
-### Key Features
-
-* 📄 PowerPoint and PDF analysis
-* 🔎 Document parsing and OCR
-* 🧠 Retrieval-Augmented Generation
-* 🗂️ FAISS vector indexing
-* 🤖 Multi-agent compliance analysis
-* 📚 Dynamic regulatory rule retrieval
-* 🎯 Specialized agents for:
-
-  * Content coherence
-  * Document structure
-  * Style and language
-  * Objectivity
-  * Visual compliance
-  * SQL/data analysis
-* 👤 Human-in-the-loop validation
-* 📑 Automated PDF reports
-* 🔄 JSON reports for system integration
-* ⚡ FastAPI microservices
-* 🖥️ Streamlit interface
-
-### Architecture
-
-```text
-                    ┌───────────────────┐
-                    │    Streamlit UI   │
-                    └─────────┬─────────┘
-                              │
-                              ▼
-                    ┌───────────────────┐
-                    │   Orchestrator    │
-                    └─────────┬─────────┘
-                              │
-             ┌────────────────┼────────────────┐
-             │                │                │
-             ▼                ▼                ▼
-       ┌──────────┐     ┌──────────┐     ┌──────────┐
-       │ Content  │     │ Structure│     │ Visual   │
-       │  Agent   │     │  Agent   │     │  Agent   │
-       └──────────┘     └──────────┘     └──────────┘
-             │                │                │
-             └────────────────┼────────────────┘
-                              ▼
-                       ┌──────────────┐
-                       │     RAG      │
-                       │    FAISS     │
-                       └──────┬───────┘
-                              │
-                              ▼
-                       ┌──────────────┐
-                       │     LLM      │
-                       └──────┬───────┘
-                              │
-                    ┌─────────┴─────────┐
-                    ▼                   ▼
-              ┌──────────┐       ┌──────────┐
-              │ PDF      │       │   JSON   │
-              │ Report   │       │  Report  │
-              └──────────┘       └──────────┘
-```
-
-### Technologies
-
-`Python` `FastAPI` `Streamlit` `LangChain` `RAG` `FAISS` `PyTorch` `OpenAI` `Azure OpenAI` `Pytesseract` `PyPDF2` `python-pptx`
-
----
-
 # 🚀 AI Commercial Growth Engine
 
 **Agentic AI platform for automated B2B prospecting and commercial growth.**
@@ -503,6 +374,135 @@ Authentication, authorization, secrets management and environment configuration 
 Docker and Docker Compose are used to make development and deployment environments reproducible.
 
 ---
+
+# 🏦 CompliMind — AI Compliance Platform
+
+**Multi-agent AI platform for automated financial compliance analysis.**
+
+Developed in the context of **Oddo BHF**, CompliMind analyzes commercial presentations, prospectuses and financial documents against regulatory compliance rules.
+
+The platform combines **RAG, vector search, LLMs and specialized AI agents** to provide explainable compliance decisions.
+
+### Key Features
+
+* 📄 PowerPoint and PDF analysis
+* 🔎 Document parsing and OCR
+* 🧠 Retrieval-Augmented Generation
+* 🗂️ FAISS vector indexing
+* 🤖 Multi-agent compliance analysis
+* 📚 Dynamic regulatory rule retrieval
+* 🎯 Specialized agents for:
+
+  * Content coherence
+  * Document structure
+  * Style and language
+  * Objectivity
+  * Visual compliance
+  * SQL/data analysis
+* 👤 Human-in-the-loop validation
+* 📑 Automated PDF reports
+* 🔄 JSON reports for system integration
+* ⚡ FastAPI microservices
+* 🖥️ Streamlit interface
+
+### Architecture
+
+```text
+                    ┌───────────────────┐
+                    │    Streamlit UI   │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │   Orchestrator    │
+                    └─────────┬─────────┘
+                              │
+             ┌────────────────┼────────────────┐
+             │                │                │
+             ▼                ▼                ▼
+       ┌──────────┐     ┌──────────┐     ┌──────────┐
+       │ Content  │     │ Structure│     │ Visual   │
+       │  Agent   │     │  Agent   │     │  Agent   │
+       └──────────┘     └──────────┘     └──────────┘
+             │                │                │
+             └────────────────┼────────────────┘
+                              ▼
+                       ┌──────────────┐
+                       │     RAG      │
+                       │    FAISS     │
+                       └──────┬───────┘
+                              │
+                              ▼
+                       ┌──────────────┐
+                       │     LLM      │
+                       └──────┬───────┘
+                              │
+                    ┌─────────┴─────────┐
+                    ▼                   ▼
+              ┌──────────┐       ┌──────────┐
+              │ PDF      │       │   JSON   │
+              │ Report   │       │  Report  │
+              └──────────┘       └──────────┘
+```
+
+### Technologies
+
+`Python` `FastAPI` `Streamlit` `LangChain` `RAG` `FAISS` `PyTorch` `OpenAI` `Azure OpenAI` `Pytesseract` `PyPDF2` `python-pptx`
+
+---
+## 🔐 TrustLens — AI Identity Verification
+
+**AI-powered identity verification platform combining Computer Vision, OCR and microservices.**
+
+TrustLens automates the extraction, validation and analysis of identity documents such as passports and national identity cards.
+
+### Key Features
+
+* 🧾 Automatic document text extraction using **PaddleOCR**
+* 🖼️ MRZ detection using **YOLO + PyTorch**
+* 🧠 AI-based validation of extracted information
+* 🔍 Detection of inconsistencies in identity information
+* 📬 Automated notifications through SMTP
+* 📊 Monitoring and analytics with **Metabase**
+* 🌐 API Gateway for service orchestration
+* 💻 Angular frontend
+* 🧩 Microservices architecture
+
+### Architecture
+
+```text
+                    ┌──────────────────┐
+                    │  Angular Client  │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │    API Gateway   │
+                    └────────┬─────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              │              │              │
+              ▼              ▼              ▼
+        ┌──────────┐   ┌──────────┐   ┌──────────┐
+        │ PaddleOCR│   │  MRZ AI  │   │ Analysis │
+        │ Service  │   │  YOLO    │   │ Service  │
+        └──────────┘   └──────────┘   └──────────┘
+              │              │              │
+              └──────────────┼──────────────┘
+                             ▼
+                    ┌──────────────────┐
+                    │    Metabase      │
+                    │    Dashboard     │
+                    └──────────────────┘
+```
+
+### Technologies
+
+`Python` `PaddleOCR` `YOLO` `PyTorch` `Flask` `Node.js` `Express.js` `Angular` `Metabase` `SMTP`
+
+---
+
+
 
 # 🎓 Education
 
