@@ -196,7 +196,7 @@ I am particularly interested in designing systems that are not only functional b
 ### Architectural patterns I work with
 
 <p align="center">
-  <img src="./deploymentArch.png.jpg"
+  <img src="./deploymentArch.png"
        alt="High-Level Architecture"
        width="900">
 </p>
