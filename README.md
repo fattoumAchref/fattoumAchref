@@ -91,36 +91,11 @@ Built at **THE ROAD**, this project combines AI agents, web intelligence and a c
 
 ### AI Pipeline
 
-```text
-                 Company Discovery
-                        │
-                        ▼
-               Website Intelligence
-                        │
-              ┌─────────┼─────────┐
-              ▼         ▼         ▼
-         Technical     SEO       UX
-           Audit      Audit     Audit
-              │         │         │
-              └─────────┼─────────┘
-                        ▼
-                 Conversion Audit
-                        │
-                        ▼
-              Deterministic Scoring
-                        │
-                        ▼
-               AI Content Generation
-                        │
-                        ▼
-                Email Enrichment
-                        │
-                        ▼
-                Approval Workflow
-                        │
-                        ▼
-                 Email Campaign
-```
+<p align="center">
+  <img src="./architecture-the-road.png"
+       alt="AI Commercial Growth Engine Architecture"
+       width="900">
+</p>
 
 ### Architecture
 
