@@ -103,7 +103,6 @@ Built at **THE ROAD**, this project combines AI agents, web intelligence and a c
        alt="AI Commercial Growth Engine Architecture"
        width="900">
 </p>
-architecture.jpg
 
 ### Technologies
 
@@ -311,31 +310,11 @@ TrustLens automates the extraction, validation and analysis of identity document
 
 ### Architecture
 
-```text
-                    ┌──────────────────┐
-                    │  Angular Client  │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │    API Gateway   │
-                    └────────┬─────────┘
-                             │
-              ┌──────────────┼──────────────┐
-              │              │              │
-              ▼              ▼              ▼
-        ┌──────────┐   ┌──────────┐   ┌──────────┐
-        │ PaddleOCR│   │  MRZ AI  │   │ Analysis │
-        │ Service  │   │  YOLO    │   │ Service  │
-        └──────────┘   └──────────┘   └──────────┘
-              │              │              │
-              └──────────────┼──────────────┘
-                             ▼
-                    ┌──────────────────┐
-                    │    Metabase      │
-                    │    Dashboard     │
-                    └──────────────────┘
-```
+<p align="center">
+  <img src="./high-architecture.jpg"
+       alt="AI Commercial Growth Engine Architecture"
+       width="900">
+</p>
 
 ### Technologies
 
