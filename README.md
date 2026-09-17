@@ -119,36 +119,6 @@ architecture.jpg
 <img src="https://skillicons.dev/icons?i=python,java,typescript,javascript,html,css,dart" />
 </p>
 
----
-
-## AI & Machine Learning
-
-```text
-Generative AI
-├── LLMs
-├── RAG
-├── AI Agents
-├── LangChain
-├── LangGraph
-├── Prompt Engineering
-└── Ollama
-
-Computer Vision
-├── YOLO
-├── PyTorch
-├── PaddleOCR
-├── Tesseract
-└── OpenCV
-
-Machine Learning
-├── Scikit-learn
-├── Classification
-├── Regression
-├── Model Evaluation
-└── Feature Engineering
-```
-
----
 
 ## Backend
 
@@ -225,50 +195,12 @@ I am particularly interested in designing systems that are not only functional b
 
 ### Architectural patterns I work with
 
-```text
-Microservices
-     │
-     ├── API Gateway
-     │
-     ├── Service Discovery
-     │
-     ├── Independent Databases
-     │
-     ├── Message Broker
-     │
-     ├── Distributed Cache
-     │
-     └── Containerized Services
-```
+<p align="center">
+  <img src="./deploymentArch.png.jpg"
+       alt="High-Level Architecture"
+       width="900">
+</p>
 
-### AI Architecture
-
-```text
-Application
-     │
-     ▼
-API
-     │
-     ▼
-AI Gateway
-     │
-     ▼
-Workflow Engine
-     │
- ┌───┼───────────┐
- ▼   ▼           ▼
-RAG Agents     Tools
- │
- ▼
-Vector Store
- │
- ▼
-LLM Provider
-```
-
-I focus on **provider-independent AI architectures**, allowing applications to switch between cloud and local models when required.
-
----
 
 # ☁️ AI & LLM Ecosystem
 
@@ -348,43 +280,11 @@ The platform combines **RAG, vector search, LLMs and specialized AI agents** to 
 
 ### Architecture
 
-```text
-                    ┌───────────────────┐
-                    │    Streamlit UI   │
-                    └─────────┬─────────┘
-                              │
-                              ▼
-                    ┌───────────────────┐
-                    │   Orchestrator    │
-                    └─────────┬─────────┘
-                              │
-             ┌────────────────┼────────────────┐
-             │                │                │
-             ▼                ▼                ▼
-       ┌──────────┐     ┌──────────┐     ┌──────────┐
-       │ Content  │     │ Structure│     │ Visual   │
-       │  Agent   │     │  Agent   │     │  Agent   │
-       └──────────┘     └──────────┘     └──────────┘
-             │                │                │
-             └────────────────┼────────────────┘
-                              ▼
-                       ┌──────────────┐
-                       │     RAG      │
-                       │    FAISS     │
-                       └──────┬───────┘
-                              │
-                              ▼
-                       ┌──────────────┐
-                       │     LLM      │
-                       └──────┬───────┘
-                              │
-                    ┌─────────┴─────────┐
-                    ▼                   ▼
-              ┌──────────┐       ┌──────────┐
-              │ PDF      │       │   JSON   │
-              │ Report   │       │  Report  │
-              └──────────┘       └──────────┘
-```
+<p align="center">
+  <img src="./architecturecomplimind.jpg"
+       alt="AI Commercial Growth Engine Architecture"
+       width="900">
+</p>
 
 ### Technologies
 
