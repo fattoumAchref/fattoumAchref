@@ -98,46 +98,12 @@ Built at **THE ROAD**, this project combines AI agents, web intelligence and a c
 </p>
 
 ### Architecture
-
-```text
-                       ┌──────────────────┐
-                       │ React / TanStack │
-                       │      Start       │
-                       └────────┬─────────┘
-                                │
-                                ▼
-                       ┌──────────────────┐
-                       │   API Gateway    │
-                       │     FastAPI      │
-                       └────────┬─────────┘
-                                │
-                       ┌────────▼────────┐
-                       │     Consul      │
-                       │ Service Discovery│
-                       └────────┬────────┘
-                                │
-          ┌─────────────────────┼─────────────────────┐
-          │                     │                     │
-          ▼                     ▼                     ▼
-    ┌───────────┐         ┌───────────┐        ┌───────────┐
-    │   Auth    │         │  Company  │        │ Campaign  │
-    │  Service  │         │  Service  │        │  Service  │
-    └───────────┘         └─────┬─────┘        └───────────┘
-                                │
-                                ▼
-                     ┌────────────────────┐
-                     │    AI Platform     │
-                     │ FastAPI + LangGraph│
-                     └─────────┬──────────┘
-                               │
-                    ┌──────────┼──────────┐
-                    ▼          ▼          ▼
-                 Crawling    Audits      LLMs
-                    │          │          │
-                    └──────────┼──────────┘
-                               ▼
-                         PostgreSQL
-```
+<p align="center">
+  <img src="./architecture.jpg"
+       alt="AI Commercial Growth Engine Architecture"
+       width="900">
+</p>
+architecture.jpg
 
 ### Technologies
 
