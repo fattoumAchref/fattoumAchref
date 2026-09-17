@@ -91,7 +91,11 @@ Built at **THE ROAD**, this project combines AI agents, web intelligence and a c
 
 ### AI Pipeline
 
-![Architecture](./architecture-the-road.jpg)
+<p align="center">
+  <img src="./architecture-the-road.jpg"
+       alt="AI Commercial Growth Engine Architecture"
+       width="900">
+</p>
 
 ### Architecture
 
